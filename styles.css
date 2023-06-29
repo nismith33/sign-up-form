@@ -1,5 +1,6 @@
 :root {
     --overlay-height: 20vh;
+    --text-padding: 20px;
 }
 
 body {
@@ -38,7 +39,26 @@ body {
     align-self: center;
 }
 
-.textstuff {
+/*Text and form styling */
+
+form {
     flex: 1 1 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.greyblock {
+    background-color: rgb(238, 236, 236);
+    padding-left: var(--text-padding);
+    width: 66vw;
+    flex: 1;
+}
+
+.whiteblock {
+    background-color: white;
+    padding-left: var(--text-padding);
+    width: 66vw;
+    flex: 1;
+}

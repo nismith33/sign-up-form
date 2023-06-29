@@ -40,6 +40,19 @@ body {
     font-size: x-small;
 }
 
+:focus {
+    box-shadow: 1px 1px 5px grey;
+    outline-color: blue;
+    outline-width: 1px;
+    outline-offset: 0px;
+}
+
+input:invalid {
+    outline-color: red;
+    border: solid red 1px;
+    outline-offset: 0px;
+}
+
 /*Form styling */
 
 form {

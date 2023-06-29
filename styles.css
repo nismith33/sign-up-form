@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
 :root {
     --overlay-height: 20vh;
-    --text-padding: 20px;
+    --text-padding: 30px;
 }
 
 body {
@@ -31,6 +36,11 @@ body {
     margin-top: 30vh
 }
 
+.fancy-text {
+    font-family: Norse-Bold, serif;
+    font-size: 15vh;
+}
+
 .logo {
     height: var(--overlay-height);
 }
@@ -38,19 +48,6 @@ body {
 .attribution {
     align-self: center;
     font-size: x-small;
-}
-
-:focus {
-    box-shadow: 1px 1px 5px grey;
-    outline-color: blue;
-    outline-width: 1px;
-    outline-offset: 0px;
-}
-
-input:invalid {
-    outline-color: red;
-    border: solid red 1px;
-    outline-offset: 0px;
 }
 
 /*Form styling */
@@ -75,6 +72,7 @@ form {
     padding-left: var(--text-padding);
     width: 66vw;
     flex: 1;
+   
 }
 
 .inputBlocks {
@@ -95,6 +93,24 @@ label {
     font-size: x-small;
 }
 
+:focus {
+    box-shadow: 1px 1px 5px grey;
+    outline-color: blue;
+    outline-width: 1px;
+    outline-offset: 0px;
+}
+
+input:invalid {
+    outline-color: red;
+    border: solid red 1px;
+    outline-offset: 0px;
+}
+
+.whiteblock>p {
+    font-size: large;
+    color: rgb(35, 37, 37);
+}
+
 /*Top grey styling*/
 .top {
     display: flex;
@@ -108,4 +124,18 @@ label {
     font-size: large;
     margin-bottom:20px;
     margin-top: 0px;
+}
+
+/*bottom grey styling*/
+.bottom {
+    padding-top: 30px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 5px;
+    font-weight: bold;
 }

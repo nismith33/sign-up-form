@@ -37,9 +37,10 @@ body {
 
 .attribution {
     align-self: center;
+    font-size: x-small;
 }
 
-/*Text and form styling */
+/*Form styling */
 
 form {
     flex: 1 1 66%;
@@ -79,4 +80,19 @@ form {
 
 label {
     font-size: x-small;
+}
+
+/*Top grey styling*/
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top>p {
+    max-width: 40vw;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom:20px;
+    margin-top: 0px;
 }
